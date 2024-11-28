@@ -1,5 +1,0 @@
-/Users/js/Desktop/mygrf/build/CMakeFiles/debug.dir
-/Users/js/Desktop/mygrf/build/CMakeFiles/release.dir
-/Users/js/Desktop/mygrf/build/CMakeFiles/output.dir
-/Users/js/Desktop/mygrf/build/CMakeFiles/edit_cache.dir
-/Users/js/Desktop/mygrf/build/CMakeFiles/rebuild_cache.dir
