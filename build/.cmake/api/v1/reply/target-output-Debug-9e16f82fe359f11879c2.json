@@ -1,0 +1,1067 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "output"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 41,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -O2 -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Cholesky"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/CholmodSupport"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/arch/AVX"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/arch/AVX512"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/arch/AltiVec"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/arch/CUDA"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/arch/Default"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/arch/GPU"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/arch/HIP/hcc"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/arch/MSA"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/arch/NEON"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/arch/SSE"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/arch/SVE"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/arch/SYCL"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/arch/ZVector"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/functors"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/products"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Core/util"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Eigenvalues"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Geometry"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Geometry/arch"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Householder"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/IterativeLinearSolvers"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/Jacobi"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/KLUSupport"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/LU"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/LU/arch"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/MetisSupport"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/OrderingMethods"
+				},
+				{
+					"backtrace" : 32,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/PaStiXSupport"
+				},
+				{
+					"backtrace" : 33,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/PardisoSupport"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/QR"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/SPQRSupport"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/SVD"
+				},
+				{
+					"backtrace" : 37,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/SparseCholesky"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/SparseCore"
+				},
+				{
+					"backtrace" : 39,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/SparseLU"
+				},
+				{
+					"backtrace" : 40,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/SparseQR"
+				},
+				{
+					"backtrace" : 41,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/StlSupport"
+				},
+				{
+					"backtrace" : 42,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/SuperLUSupport"
+				},
+				{
+					"backtrace" : 43,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/UmfPackSupport"
+				},
+				{
+					"backtrace" : 44,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/misc"
+				},
+				{
+					"backtrace" : 45,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party/Eigen/src/plugins"
+				},
+				{
+					"backtrace" : 46,
+					"path" : "/Users/js/Desktop/mygrf/src/third_party"
+				},
+				{
+					"backtrace" : 47,
+					"path" : "/Users/js/Desktop/mygrf/src/src"
+				},
+				{
+					"backtrace" : 48,
+					"path" : "/Users/js/Desktop/mygrf/src/src/analysis"
+				},
+				{
+					"backtrace" : 49,
+					"path" : "/Users/js/Desktop/mygrf/src/src/commons"
+				},
+				{
+					"backtrace" : 50,
+					"path" : "/Users/js/Desktop/mygrf/src/src/forest"
+				},
+				{
+					"backtrace" : 51,
+					"path" : "/Users/js/Desktop/mygrf/src/src/prediction"
+				},
+				{
+					"backtrace" : 52,
+					"path" : "/Users/js/Desktop/mygrf/src/src/relabeling"
+				},
+				{
+					"backtrace" : 53,
+					"path" : "/Users/js/Desktop/mygrf/src/src/sampling"
+				},
+				{
+					"backtrace" : 54,
+					"path" : "/Users/js/Desktop/mygrf/src/src/splitting"
+				},
+				{
+					"backtrace" : 55,
+					"path" : "/Users/js/Desktop/mygrf/src/src/tree"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53
+			]
+		}
+	],
+	"id" : "output::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wall -O2 -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-pthread",
+				"role" : "flags"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "output",
+	"nameOnDisk" : "output",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/analysis/SplitFrequencyComputer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/commons/Data.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/commons/utility.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/forest/Forest.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/forest/ForestOptions.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/forest/ForestPredictor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/forest/ForestPredictors.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/forest/ForestTrainer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/forest/ForestTrainers.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/CausalSurvivalPredictionStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/InstrumentalPredictionStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/LLCausalPredictionStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/LocalLinearPredictionStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/MultiCausalPredictionStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/MultiRegressionPredictionStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/ObjectiveBayesDebiaser.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/Prediction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/PredictionValues.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/ProbabilityPredictionStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/QuantilePredictionStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/RegressionPredictionStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/SurvivalPredictionStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/collector/DefaultPredictionCollector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/collector/OptimizedPredictionCollector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/collector/SampleWeightComputer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/prediction/collector/TreeTraverser.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/relabeling/CausalSurvivalRelabelingStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/relabeling/InstrumentalRelabelingStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/relabeling/LLRegressionRelabelingStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/relabeling/MultiCausalRelabelingStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/relabeling/MultiNoopRelabelingStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/relabeling/NoopRelabelingStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/relabeling/QuantileRelabelingStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/sampling/RandomSampler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/sampling/SamplingOptions.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/splitting/CausalSurvivalSplittingRule.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/splitting/InstrumentalSplittingRule.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/splitting/MultiCausalSplittingRule.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/splitting/MultiRegressionSplittingRule.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/splitting/ProbabilitySplittingRule.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/splitting/RegressionSplittingRule.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/splitting/SurvivalSplittingRule.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/splitting/factory/CausalSurvivalSplittingRuleFactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/splitting/factory/InstrumentalSplittingRuleFactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/splitting/factory/MultiCausalSplittingRuleFactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/splitting/factory/MultiRegressionSplittingRuleFactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/splitting/factory/ProbabilitySplittingRuleFactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/splitting/factory/RegressionSplittingRuleFactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/splitting/factory/SurvivalSplittingRuleFactory.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/tree/Tree.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/tree/TreeOptions.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/src/tree/TreeTrainer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "main_test.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
