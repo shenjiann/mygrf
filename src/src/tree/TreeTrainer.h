@@ -44,7 +44,7 @@ public:
                               const std::vector<size_t>& clusters,
                               const TreeOptions& options) const;
 
-private:
+// private: // 正式发布时删除此条注释
   void create_empty_node(std::vector<std::vector<size_t>>& child_nodes,
                          std::vector<std::vector<size_t>>& samples,
                          std::vector<size_t>& split_vars,

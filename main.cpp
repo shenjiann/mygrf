@@ -17,6 +17,7 @@ int main() {
     
     ForestTrainer trainer = regression_trainer();
 
+    // 创建ForestOptions
     uint num_trees = 50;
     size_t ci_group_size = 1;
     double sample_fraction = ci_group_size > 1 ? 0.35 : 0.7;
@@ -30,26 +31,47 @@ int main() {
     uint num_threads = 4;
     uint seed = 42;
     bool legacy_seed = true;
-    std::vector<size_t> empty_clusters;
-    uint samples_per_cluster = 0;
+    // std::vector<size_t> empty_clusters;
+    std::vector<size_t> province_id(data.get_num_rows());
+    size_t n = 0;
+    std::generate(province_id.begin(), province_id.end(), [&n]() { return 10 * (n++ / 5 + 1); });
+    uint samples_per_cluster = 4;
     ForestOptions options = ForestOptions(num_trees, ci_group_size, sample_fraction, 
         mtry, min_node_size, honesty, honesty_fraction, prune, alpha, imbalance_penalty, 
-        num_threads, seed, legacy_seed, empty_clusters, samples_per_cluster);
+        num_threads, seed, legacy_seed, province_id, samples_per_cluster);
 
+    // 创建Sampler
     size_t start = 13;
     std::mt19937_64 random_number_generator(options.get_random_seed() + start);
     nonstd::uniform_int_distribution<uint> udist;
     uint tree_seed = udist(random_number_generator);;
     RandomSampler sampler(tree_seed, options.get_sampling_options());
 
-
+    // 创建clusters
     std::vector<size_t> clusters;
-    sampler.sample(data.get_num_rows(), options.get_sample_fraction(), clusters);
-    if (sampler.options.get_clusters().empty()) {
-        std::cout << "is empty !" << std::endl;
-    }
+    sampler.sample_clusters(data.get_num_rows(), options.get_sample_fraction(), clusters);
+    // 训练一棵树
+    // std::unique_ptr<Tree> tree = trainer.tree_trainer.train(data, sampler, clusters, options.get_tree_options());
+    std::vector<std::vector<size_t>> child_nodes;
+    std::vector<std::vector<size_t>> nodes;
+    std::vector<size_t> split_vars;
+    std::vector<double> split_values;
+    std::vector<bool> send_missing_left;
 
-    std::unique_ptr<Tree> tree = trainer.tree_trainer.train(data, sampler, clusters, options.get_tree_options());
+    child_nodes.emplace_back();
+    child_nodes.emplace_back();
+    trainer.tree_trainer.create_empty_node(child_nodes, nodes, split_vars, split_values, send_missing_left);
+    
+    std::vector<size_t> new_leaf_samples;
+    std::vector<size_t> tree_growing_clusters;
+    std::vector<size_t> new_leaf_clusters;
+    sampler.subsample(clusters, options.get_tree_options().get_honesty_fraction(), tree_growing_clusters, new_leaf_clusters);
+    sampler.sample_from_clusters(tree_growing_clusters, nodes[0]);
+    sampler.sample_from_clusters(new_leaf_clusters, new_leaf_samples);
 
-    std::cout << "asdf" << std::endl;
+    std::unique_ptr<SplittingRule> splitting_rule = trainer.tree_trainer.splitting_rule_factory->create(
+      nodes[0].size(), options.get_tree_options());
+
+    // 结束运行
+    std::cout << "Down" << std::cin.get() << std::endl;
 }
