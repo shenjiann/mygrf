@@ -73,5 +73,6 @@ int main() {
       nodes[0].size(), options.get_tree_options());
 
     // 结束运行
-    std::cout << "Down" << std::cin.get() << std::endl;
+    std::cout << "Down !" << std::endl;
+    std::cout << std::cin.get() << std::endl;
 }
