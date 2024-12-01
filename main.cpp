@@ -50,6 +50,7 @@ int main() {
     // 创建clusters
     std::vector<size_t> clusters;
     sampler.sample_clusters(data.get_num_rows(), options.get_sample_fraction(), clusters);
+    
     // 训练一棵树
     // std::unique_ptr<Tree> tree = trainer.tree_trainer.train(data, sampler, clusters, options.get_tree_options());
     std::vector<std::vector<size_t>> child_nodes;
@@ -71,6 +72,10 @@ int main() {
 
     std::unique_ptr<SplittingRule> splitting_rule = trainer.tree_trainer.splitting_rule_factory->create(
       nodes[0].size(), options.get_tree_options());
+
+    size_t num_open_nodes = 1;
+    size_t i = 0;
+    Eigen::ArrayXXd responses_by_sample(data.get_num_rows(), trainer.tree_trainer.relabeling_strategy->get_response_length());
 
     // 结束运行
     std::cout << "Down !" << std::endl;
