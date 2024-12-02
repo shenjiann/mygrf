@@ -60,4 +60,4 @@ ADD_CUSTOM_TARGET(release
 ## ======================================================================================##
 ## Executable
 ## ======================================================================================##
-add_executable(output ${SOURCES} main.cpp main_test.cpp)
+add_executable(main ${SOURCES} main.cpp)
