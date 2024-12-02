@@ -18,12 +18,12 @@
  #-------------------------------------------------------------------------------*/
 
 #include "forest/ForestTrainers.h"
-#include "prediction/CausalSurvivalPredictionStrategy.h"
+// #include "prediction/CausalSurvivalPredictionStrategy.h"
 #include "prediction/InstrumentalPredictionStrategy.h"
-#include "prediction/MultiCausalPredictionStrategy.h"
+// #include "prediction/MultiCausalPredictionStrategy.h"
 #include "prediction/RegressionPredictionStrategy.h"
-#include "prediction/MultiRegressionPredictionStrategy.h"
-#include "prediction/ProbabilityPredictionStrategy.h"
+// #include "prediction/MultiRegressionPredictionStrategy.h"
+// #include "prediction/ProbabilityPredictionStrategy.h"
 // #include "relabeling/CausalSurvivalRelabelingStrategy.h"
 #include "relabeling/InstrumentalRelabelingStrategy.h"
 // #include "relabeling/MultiCausalRelabelingStrategy.h"

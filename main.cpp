@@ -79,17 +79,17 @@ int main() {
 
 
   while (num_open_nodes > 0) {
-    bool is_leaf_node = split_node(i,
-                                    data,
-                                    splitting_rule,
-                                    sampler,
-                                    child_nodes,
-                                    nodes,
-                                    split_vars,
-                                    split_values,
-                                    send_missing_left,
-                                    responses_by_sample,
-                                    options);
+    bool is_leaf_node = trainer.tree_trainer.split_node(i,
+                                                        data,
+                                                        splitting_rule,
+                                                        sampler,
+                                                        child_nodes,
+                                                        nodes,
+                                                        split_vars,
+                                                        split_values,
+                                                        send_missing_left,
+                                                        responses_by_sample,
+                                                        options.get_tree_options());
     if (is_leaf_node) {
       --num_open_nodes;
     } else {

@@ -36,6 +36,7 @@ std::unique_ptr<Tree> TreeTrainer::train(const Data& data,
                                          RandomSampler& sampler,
                                          const std::vector<size_t>& clusters,
                                          const TreeOptions& options) const {
+  // 初始化一些容器
   std::vector<std::vector<size_t>> child_nodes;
   std::vector<std::vector<size_t>> nodes;
   std::vector<size_t> split_vars;
@@ -46,6 +47,9 @@ std::unique_ptr<Tree> TreeTrainer::train(const Data& data,
   child_nodes.emplace_back();
   create_empty_node(child_nodes, nodes, split_vars, split_values, send_missing_left);
 
+  // 进行honesty样本分裂
+  // tree_growing_clusters 用于存储growing样本的聚类索引，new_leaf_clusters用于存储estimate样本的聚类索引
+  // 根据聚类索引获得growing样本的索引存放到nodes[0]，estimate样本的索引放到 new_leaf_samples
   std::vector<size_t> new_leaf_samples;
 
   if (options.get_honesty()) {
