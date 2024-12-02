@@ -32,13 +32,15 @@ TreeTrainer::TreeTrainer(std::unique_ptr<RelabelingStrategy> relabeling_strategy
     splitting_rule_factory(std::move(splitting_rule_factory)),
     prediction_strategy(std::move(prediction_strategy)) {}
 
+
+/* 
+ * 训练一棵树
+ */
 std::unique_ptr<Tree> TreeTrainer::train(const Data& data,
                                          RandomSampler& sampler,
                                          const std::vector<size_t>& clusters,
                                          const TreeOptions& options) const {
-/* step1.
- * 初始化一些容器
- */
+  // step1. 初始化一些容器
   std::vector<std::vector<size_t>> child_nodes; // 存储每个节点的左右子节点
   std::vector<std::vector<size_t>> nodes; // 存储每个节点中包含样本的索引
   std::vector<size_t> split_vars;
@@ -49,9 +51,7 @@ std::unique_ptr<Tree> TreeTrainer::train(const Data& data,
   child_nodes.emplace_back();
   create_empty_node(child_nodes, nodes, split_vars, split_values, send_missing_left);
 
-/* step2.
- * 进行honesty样本分裂
- */
+  // step2. 进行honesty样本分裂
   std::vector<size_t> new_leaf_samples;
 
   if (options.get_honesty()) {
@@ -70,6 +70,7 @@ std::unique_ptr<Tree> TreeTrainer::train(const Data& data,
   std::unique_ptr<SplittingRule> splitting_rule = splitting_rule_factory->create(
       nodes[0].size(), options);
 
+  // step 3: 进行节点分裂
   size_t num_open_nodes = 1;
   size_t i = 0;
   Eigen::ArrayXXd responses_by_sample(data.get_num_rows(), relabeling_strategy->get_response_length());
@@ -113,41 +114,9 @@ std::unique_ptr<Tree> TreeTrainer::train(const Data& data,
   return tree;
 }
 
-void TreeTrainer::repopulate_leaf_nodes(const std::unique_ptr<Tree>& tree,
-                                        const Data& data,
-                                        const std::vector<size_t>& leaf_samples,
-                                        const bool honesty_prune_leaves) const {
-  size_t num_nodes = tree->get_leaf_samples().size();
-  std::vector<std::vector<size_t>> new_leaf_nodes(num_nodes);
-
-  std::vector<size_t> leaf_nodes = tree->find_leaf_nodes(data, leaf_samples);
-
-  for (auto& sample : leaf_samples) {
-    size_t leaf_node = leaf_nodes[sample];
-    new_leaf_nodes[leaf_node].push_back(sample);
-  }
-  tree->set_leaf_samples(new_leaf_nodes);
-  if (honesty_prune_leaves) {
-    tree->honesty_prune_leaves();
-  }
-}
-
-void TreeTrainer::create_split_variable_subset(std::vector<size_t>& result,
-                                               RandomSampler& sampler,
-                                               const Data& data,
-                                               uint mtry) const {
-
-  // Randomly select an mtry for this tree based on the overall setting.
-  size_t num_independent_variables = data.get_num_cols() - data.get_disallowed_split_variables().size();
-  size_t mtry_sample = sampler.sample_poisson(mtry);
-  size_t split_mtry = std::max<size_t>(std::min<size_t>(mtry_sample, num_independent_variables), 1uL);
-
-  sampler.draw(result,
-               data.get_num_cols(),
-               data.get_disallowed_split_variables(),
-               split_mtry);
-}
-
+/* 
+ * 节点分裂的主函数
+ */
 bool TreeTrainer::split_node(size_t node,
                              const Data& data,
                              const std::unique_ptr<SplittingRule>& splitting_rule,
@@ -159,7 +128,7 @@ bool TreeTrainer::split_node(size_t node,
                              std::vector<bool>& send_missing_left,
                              Eigen::ArrayXXd& responses_by_sample,
                              const TreeOptions& options) const {
-
+  // 创建候选分裂变量
   std::vector<size_t> possible_split_vars;
   create_split_variable_subset(possible_split_vars, sampler, data, options.get_mtry());
 
@@ -208,6 +177,9 @@ bool TreeTrainer::split_node(size_t node,
   return false;
 }
 
+/* 
+ * 节点分裂的内部函数
+ */
 bool TreeTrainer::split_node_internal(size_t node,
                                       const Data& data,
                                       const std::unique_ptr<SplittingRule>& splitting_rule,
@@ -223,7 +195,7 @@ bool TreeTrainer::split_node_internal(size_t node,
     split_values[node] = -1.0;
     return true;
   }
-
+  // 根据samples中的样本索引，提取outcome到response_by_sample中
   bool stop = relabeling_strategy->relabel(samples[node], data, responses_by_sample);
 
   if (stop || splitting_rule->find_best_split(data,
@@ -241,6 +213,10 @@ bool TreeTrainer::split_node_internal(size_t node,
   return false;
 }
 
+/* 
+ * 为树中的每个新节点初始化节点结构：
+ * child_nodes[0]={}, child_nodes[1]={}, samples={}, split_vars={}, split_values={}, send_missing_left={true}
+ */
 void TreeTrainer::create_empty_node(std::vector<std::vector<size_t>>& child_nodes,
                                     std::vector<std::vector<size_t>>& samples,
                                     std::vector<size_t>& split_vars,
@@ -254,4 +230,38 @@ void TreeTrainer::create_empty_node(std::vector<std::vector<size_t>>& child_node
   send_missing_left.push_back(true);
 }
 
+void TreeTrainer::repopulate_leaf_nodes(const std::unique_ptr<Tree>& tree,
+                                        const Data& data,
+                                        const std::vector<size_t>& leaf_samples,
+                                        const bool honesty_prune_leaves) const {
+  size_t num_nodes = tree->get_leaf_samples().size();
+  std::vector<std::vector<size_t>> new_leaf_nodes(num_nodes);
+
+  std::vector<size_t> leaf_nodes = tree->find_leaf_nodes(data, leaf_samples);
+
+  for (auto& sample : leaf_samples) {
+    size_t leaf_node = leaf_nodes[sample];
+    new_leaf_nodes[leaf_node].push_back(sample);
+  }
+  tree->set_leaf_samples(new_leaf_nodes);
+  if (honesty_prune_leaves) {
+    tree->honesty_prune_leaves();
+  }
+}
+
+void TreeTrainer::create_split_variable_subset(std::vector<size_t>& result,
+                                               RandomSampler& sampler,
+                                               const Data& data,
+                                               uint mtry) const {
+
+  // Randomly select an mtry for this tree based on the overall setting.
+  size_t num_independent_variables = data.get_num_cols() - data.get_disallowed_split_variables().size();
+  size_t mtry_sample = sampler.sample_poisson(mtry);
+  size_t split_mtry = std::max<size_t>(std::min<size_t>(mtry_sample, num_independent_variables), 1uL);
+
+  sampler.draw(result,
+               data.get_num_cols(),
+               data.get_disallowed_split_variables(),
+               split_mtry);
+}
 } // namespace grf
