@@ -36,9 +36,11 @@ std::unique_ptr<Tree> TreeTrainer::train(const Data& data,
                                          RandomSampler& sampler,
                                          const std::vector<size_t>& clusters,
                                          const TreeOptions& options) const {
-  // 初始化一些容器
-  std::vector<std::vector<size_t>> child_nodes;
-  std::vector<std::vector<size_t>> nodes;
+/* step1.
+ * 初始化一些容器
+ */
+  std::vector<std::vector<size_t>> child_nodes; // 存储每个节点的左右子节点
+  std::vector<std::vector<size_t>> nodes; // 存储每个节点中包含样本的索引
   std::vector<size_t> split_vars;
   std::vector<double> split_values;
   std::vector<bool> send_missing_left;
@@ -47,19 +49,19 @@ std::unique_ptr<Tree> TreeTrainer::train(const Data& data,
   child_nodes.emplace_back();
   create_empty_node(child_nodes, nodes, split_vars, split_values, send_missing_left);
 
-  // 进行honesty样本分裂
-  // tree_growing_clusters 用于存储growing样本的聚类索引，new_leaf_clusters用于存储estimate样本的聚类索引
-  // 根据聚类索引获得growing样本的索引存放到nodes[0]，estimate样本的索引放到 new_leaf_samples
+/* step2.
+ * 进行honesty样本分裂
+ */
   std::vector<size_t> new_leaf_samples;
 
   if (options.get_honesty()) {
-    std::vector<size_t> tree_growing_clusters;
-    std::vector<size_t> new_leaf_clusters;
+    std::vector<size_t> tree_growing_clusters; // 用于存储growing样本的聚类索引
+    std::vector<size_t> new_leaf_clusters; // 用于存储estimate样本的聚类索引
 
-    sampler.subsample(clusters, options.get_honesty_fraction(), tree_growing_clusters, new_leaf_clusters);
+    sampler.subsample(clusters, options.get_honesty_fraction(), tree_growing_clusters, new_leaf_clusters); // 将cluster索引分为2份
 
-    sampler.sample_from_clusters(tree_growing_clusters, nodes[0]);
-    sampler.sample_from_clusters(new_leaf_clusters, new_leaf_samples);
+    sampler.sample_from_clusters(tree_growing_clusters, nodes[0]); // 根据cluster索引得到growing样本索引，存放到nodes[0]
+    sampler.sample_from_clusters(new_leaf_clusters, new_leaf_samples); // 根据cluster索引得到estimate样本索引，存放到new_leaf_clusters
   } else {
     sampler.sample_from_clusters(clusters, nodes[0]);
   }
