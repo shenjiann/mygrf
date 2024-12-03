@@ -116,6 +116,11 @@ std::unique_ptr<Tree> TreeTrainer::train(const Data& data,
 
 /* 
  * 节点分裂的主函数
+ * @brief 对节点进行分裂，将
+ * @param node: 进行分裂的节点
+ * @param child_nodes: [0]记录左节点索引, [1]记录右节点索引
+ * @param samples: 记录各个节点包含的样本索引
+ * @return Boolean:
  */
 bool TreeTrainer::split_node(size_t node,
                              const Data& data,
@@ -213,10 +218,6 @@ bool TreeTrainer::split_node_internal(size_t node,
   return false;
 }
 
-/* 
- * 为树中的每个新节点初始化节点结构：
- * child_nodes[0]={}, child_nodes[1]={}, samples={}, split_vars={}, split_values={}, send_missing_left={true}
- */
 void TreeTrainer::create_empty_node(std::vector<std::vector<size_t>>& child_nodes,
                                     std::vector<std::vector<size_t>>& samples,
                                     std::vector<size_t>& split_vars,

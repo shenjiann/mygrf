@@ -22,7 +22,7 @@ int main() {
   size_t ci_group_size = 1;
   double sample_fraction = ci_group_size > 1 ? 0.35 : 0.7;
   uint mtry = 3;
-  uint min_node_size = 1;
+  uint min_node_size = 10;
   bool honesty = true;
   double honesty_fraction = 0.5;
   bool prune = true;
@@ -78,26 +78,39 @@ int main() {
   Eigen::ArrayXXd responses_by_sample(data.get_num_rows(), trainer.tree_trainer.relabeling_strategy->get_response_length());
 
 
-  while (num_open_nodes > 0) {
-    bool is_leaf_node = trainer.tree_trainer.split_node(i,
-                                                        data,
-                                                        splitting_rule,
-                                                        sampler,
-                                                        child_nodes,
-                                                        nodes,
-                                                        split_vars,
-                                                        split_values,
-                                                        send_missing_left,
-                                                        responses_by_sample,
-                                                        options.get_tree_options());
-    if (is_leaf_node) {
-      --num_open_nodes;
-    } else {
-      nodes[i].clear();
-      ++num_open_nodes;
-    }
-    ++i;
-  }
+  std::vector<size_t> possible_split_vars;
+  trainer.tree_trainer.create_split_variable_subset(possible_split_vars, sampler, data, options.get_tree_options().get_mtry());
+  
+  bool stop = trainer.tree_trainer.relabeling_strategy->relabel(nodes[i], data, responses_by_sample);
+
+  if (stop || splitting_rule->find_best_split(data,
+                                              i,
+                                              possible_split_vars,
+                                              responses_by_sample,
+                                              nodes,
+                                              split_vars,
+                                              split_values,
+                                              send_missing_left))
+  // while (num_open_nodes > 0) {
+  //   bool is_leaf_node = trainer.tree_trainer.split_node(i,
+  //                                                       data,
+  //                                                       splitting_rule,
+  //                                                       sampler,
+  //                                                       child_nodes,
+  //                                                       nodes,
+  //                                                       split_vars,
+  //                                                       split_values,
+  //                                                       send_missing_left,
+  //                                                       responses_by_sample,
+  //                                                       options.get_tree_options());
+  //   if (is_leaf_node) {
+  //     --num_open_nodes;
+  //   } else {
+  //     nodes[i].clear();
+  //     ++num_open_nodes;
+  //   }
+  //   ++i;
+  // }
 
   // 结束运行
   std::cout << "Down !" << std::endl;
