@@ -11,3 +11,4 @@ Getting Started
 1. Download
 2. In terminal run: ``R CMD INSTALL /path/to/mygrf``
 3. In your .R files use: ``library(mygrf)``
+4. Uninstall in R console, run ``remove.packages("mygrf")``
