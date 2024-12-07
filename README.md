@@ -9,5 +9,5 @@ To Do Lists:
 
 Getting Started
 1. Download 
-2. In terminal run: R CMD INSTALL /path/to/mygrf
-3. Use library(mygrf) in your .R files.
+2. In terminal run: ``R CMD INSTALL /path/to/mygrf``
+3. In your .R files use: ``library(mygrf)``
