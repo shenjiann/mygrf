@@ -25,7 +25,7 @@
 #include "Eigen/Dense"
 #include "commons/Data.h"
 
-namespace grf {
+namespace mygrf {
 
 class SplittingRule {
 public:

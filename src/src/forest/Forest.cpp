@@ -22,7 +22,7 @@
 #include "commons/Data.h"
 #include "forest/Forest.h"
 
-namespace grf {
+namespace mygrf {
 
 Forest::Forest(std::vector<std::unique_ptr<Tree>>& trees,
                size_t num_variables,

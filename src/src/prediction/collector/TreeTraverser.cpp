@@ -22,7 +22,7 @@
 
 #include <future>
 
-namespace grf {
+namespace mygrf {
 
 TreeTraverser::TreeTraverser(uint num_threads) :
     num_threads(num_threads) {}

@@ -23,7 +23,7 @@
 
 #include "forest/Forest.h"
 
-namespace grf {
+namespace mygrf {
 
 /**
  * Computes a matrix of split depth by variable ID, where each value is

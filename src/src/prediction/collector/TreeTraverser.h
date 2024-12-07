@@ -22,7 +22,7 @@
 
 #include "forest/Forest.h"
 
-namespace grf {
+namespace mygrf {
 
 class TreeTraverser {
 public:

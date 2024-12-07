@@ -19,7 +19,7 @@
 
  #include "relabeling/NoopRelabelingStrategy.h"
 
- namespace grf {
+ namespace mygrf {
 
  bool NoopRelabelingStrategy::relabel(
      const std::vector<size_t>& samples,

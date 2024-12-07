@@ -24,7 +24,7 @@
 #include "commons/utility.h"
 #include "prediction/InstrumentalPredictionStrategy.h"
 
-namespace grf {
+namespace mygrf {
 
 const std::size_t InstrumentalPredictionStrategy::OUTCOME = 0;
 const std::size_t InstrumentalPredictionStrategy::TREATMENT = 1;

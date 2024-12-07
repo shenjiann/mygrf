@@ -23,7 +23,7 @@
 #include "tree/Tree.h"
 #include "commons/utility.h"
 
-namespace grf {
+namespace mygrf {
 
 Tree::Tree(size_t root_node,
            const std::vector<std::vector<size_t>>& child_nodes,

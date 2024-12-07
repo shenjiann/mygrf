@@ -28,7 +28,7 @@
 #include "prediction/PredictionValues.h"
 #include "splitting/SplittingRule.h"
 
-namespace grf {
+namespace mygrf {
 
 class Tree {
 public:

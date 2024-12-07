@@ -31,7 +31,7 @@
 #include "tree/Tree.h"
 #include "tree/TreeOptions.h"
 
-namespace grf {
+namespace mygrf {
 
 class TreeTrainer {
 public:

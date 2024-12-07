@@ -24,7 +24,7 @@
 #include "splitting/SplittingRule.h"
 #include "tree/Tree.h"
 
-namespace grf {
+namespace mygrf {
 
 class RegressionSplittingRule final: public SplittingRule {
 public:

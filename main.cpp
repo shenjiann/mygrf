@@ -4,7 +4,7 @@
 #include "ForestTrainer.h"
 #include "RandomSampler.h"
 
-using namespace grf;
+using namespace mygrf;
 
 int main() {
   int outcome_index = 10;

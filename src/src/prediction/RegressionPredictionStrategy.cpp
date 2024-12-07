@@ -20,7 +20,7 @@
 #include <cmath>
 #include "prediction/RegressionPredictionStrategy.h"
 
-namespace grf {
+namespace mygrf {
 
 const size_t RegressionPredictionStrategy::OUTCOME = 0;
 const size_t RegressionPredictionStrategy::WEIGHT = 1;

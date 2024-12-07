@@ -26,7 +26,7 @@
 #include "relabeling/RelabelingStrategy.h"
 #include "tree/Tree.h"
 
-namespace grf {
+namespace mygrf {
 
 class InstrumentalRelabelingStrategy final: public RelabelingStrategy {
 public:

@@ -23,7 +23,7 @@
 #include <cstddef>
 #include <vector>
 
-namespace grf {
+namespace mygrf {
 
 class PredictionValues {
 public:

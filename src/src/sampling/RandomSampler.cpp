@@ -19,7 +19,7 @@
 
 #include "RandomSampler.h"
 
-namespace grf {
+namespace mygrf {
 
 RandomSampler::RandomSampler(uint seed,
                              const SamplingOptions& options) :

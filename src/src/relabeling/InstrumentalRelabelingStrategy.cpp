@@ -20,7 +20,7 @@
 #include "commons/utility.h"
 #include "relabeling/InstrumentalRelabelingStrategy.h"
 
-namespace grf {
+namespace mygrf {
 
 InstrumentalRelabelingStrategy::InstrumentalRelabelingStrategy():
   reduced_form_weight(0) {}

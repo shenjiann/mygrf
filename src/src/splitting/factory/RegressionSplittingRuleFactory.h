@@ -23,7 +23,7 @@
 
 #include "splitting/factory/SplittingRuleFactory.h"
 
-namespace grf {
+namespace mygrf {
 
 /**
  * A factory that produces standard regression splitting rules.

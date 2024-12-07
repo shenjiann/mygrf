@@ -23,7 +23,7 @@
 
 #include "utility.h"
 
-namespace grf {
+namespace mygrf {
 
 void split_sequence(std::vector<uint>& result, uint start, uint end, uint num_parts) {
 

@@ -21,7 +21,7 @@
 #include "commons/globals.h"
 #include "forest/ForestTrainer.h"
 
-using namespace grf;
+using namespace mygrf;
 
 class RcppUtilities {
 public:

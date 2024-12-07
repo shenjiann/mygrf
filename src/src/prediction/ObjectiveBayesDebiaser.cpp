@@ -21,7 +21,7 @@
 #include "commons/utility.h"
 #include "ObjectiveBayesDebiaser.h"
 
-namespace grf {
+namespace mygrf {
 
 double ObjectiveBayesDebiaser::debias(double var_between,
                                       double group_noise,

@@ -5,7 +5,7 @@
     TypeName(const TypeName&);             \
     void operator=(const TypeName&)
 
-namespace grf {
+namespace mygrf {
 
 typedef unsigned int uint;
 

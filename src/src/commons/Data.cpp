@@ -25,7 +25,7 @@
 
 #include "Data.h"
 
-namespace grf {
+namespace mygrf {
 
 Data::Data(const double* data_ptr, size_t num_rows, size_t num_cols) {
   if (data_ptr == nullptr) {

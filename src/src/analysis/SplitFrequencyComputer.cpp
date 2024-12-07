@@ -19,7 +19,7 @@
 
 #include "SplitFrequencyComputer.h"
 
-namespace grf {
+namespace mygrf {
 
 std::vector<std::vector<size_t>> SplitFrequencyComputer::compute(const Forest& forest,
                                                                  size_t max_depth) const {

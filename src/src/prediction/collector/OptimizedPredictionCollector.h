@@ -24,7 +24,7 @@
 #include "forest/Forest.h"
 #include "prediction/collector/PredictionCollector.h"
 
-namespace grf {
+namespace mygrf {
 
 class OptimizedPredictionCollector final: public PredictionCollector {
 public:

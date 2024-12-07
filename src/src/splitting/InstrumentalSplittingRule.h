@@ -23,7 +23,7 @@
 #include "commons/Data.h"
 #include "splitting/SplittingRule.h"
 
-namespace grf {
+namespace mygrf {
 
 class InstrumentalSplittingRule final: public SplittingRule {
 public:

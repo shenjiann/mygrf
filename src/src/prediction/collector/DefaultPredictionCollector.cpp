@@ -23,7 +23,7 @@
 #include "prediction/collector/DefaultPredictionCollector.h"
 #include "commons/utility.h"
 
-namespace grf {
+namespace mygrf {
 
 DefaultPredictionCollector::DefaultPredictionCollector(std::unique_ptr<DefaultPredictionStrategy> strategy,
                                                        uint num_threads):

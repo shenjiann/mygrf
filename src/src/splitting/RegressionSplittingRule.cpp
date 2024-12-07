@@ -21,7 +21,7 @@
 
 #include "RegressionSplittingRule.h"
 
-namespace grf {
+namespace mygrf {
 
 RegressionSplittingRule::RegressionSplittingRule(size_t max_num_unique_values,
                                                  double alpha,

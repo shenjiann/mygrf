@@ -22,7 +22,7 @@
 
 #include "commons/globals.h"
 
-namespace grf {
+namespace mygrf {
 
 class TreeOptions {
 public:

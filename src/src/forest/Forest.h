@@ -26,7 +26,7 @@
 #include "tree/TreeTrainer.h"
 #include "tree/Tree.h"
 
-namespace grf {
+namespace mygrf {
 
 class Forest {
 public:

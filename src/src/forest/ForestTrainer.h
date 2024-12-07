@@ -31,7 +31,7 @@
 #include "forest/Forest.h"
 #include "ForestOptions.h"
 
-namespace grf {
+namespace mygrf {
 
 class ForestTrainer {
 public:

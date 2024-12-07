@@ -24,7 +24,7 @@
 #include "prediction/collector/DefaultPredictionCollector.h"
 #include "commons/utility.h"
 
-namespace grf {
+namespace mygrf {
 
 ForestPredictor::ForestPredictor(uint num_threads,
                                  std::unique_ptr<DefaultPredictionStrategy> strategy) :

@@ -19,7 +19,7 @@
 
 #include "prediction/Prediction.h"
 
-namespace grf {
+namespace mygrf {
 
 Prediction::Prediction(const std::vector<double>& predictions):
   predictions(predictions),

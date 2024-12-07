@@ -27,7 +27,7 @@
 #include "random/random.hpp"
 
 
-namespace grf {
+namespace mygrf {
 
 ForestTrainer::ForestTrainer(std::unique_ptr<RelabelingStrategy> relabeling_strategy,
                              std::unique_ptr<SplittingRuleFactory> splitting_rule_factory,

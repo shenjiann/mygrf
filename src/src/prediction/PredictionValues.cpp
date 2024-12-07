@@ -19,7 +19,7 @@
 
 #include "prediction/PredictionValues.h"
 
-namespace grf {
+namespace mygrf {
 
 PredictionValues::PredictionValues():
   num_nodes(0),

@@ -25,7 +25,7 @@
 #include "sampling/SamplingOptions.h"
 #include "tree/TreeOptions.h"
 
-namespace grf {
+namespace mygrf {
 
 class ForestOptions {
 public:

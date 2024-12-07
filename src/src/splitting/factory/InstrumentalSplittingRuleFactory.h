@@ -23,7 +23,7 @@
 
 #include "splitting/factory/SplittingRuleFactory.h"
 
-namespace grf {
+namespace mygrf {
 
 /**
  * An factory that produces splitting rules specialized

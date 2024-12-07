@@ -22,7 +22,7 @@
 
 #include "relabeling/RelabelingStrategy.h"
 
-namespace grf {
+namespace mygrf {
 
 class NoopRelabelingStrategy final: public RelabelingStrategy {
 public:

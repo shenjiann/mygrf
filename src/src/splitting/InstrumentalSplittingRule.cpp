@@ -22,7 +22,7 @@
 
 #include "InstrumentalSplittingRule.h"
 
-namespace grf {
+namespace mygrf {
 
 InstrumentalSplittingRule::InstrumentalSplittingRule(size_t max_num_unique_values,
                                                      uint min_node_size,

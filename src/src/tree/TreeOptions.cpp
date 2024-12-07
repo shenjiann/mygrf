@@ -19,7 +19,7 @@
 
 #include "tree/TreeOptions.h"
 
-namespace grf {
+namespace mygrf {
 
 TreeOptions::TreeOptions(uint mtry,
                          uint min_node_size,

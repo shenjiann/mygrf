@@ -32,7 +32,7 @@
 #include <set>
 #include <vector>
 
-namespace grf {
+namespace mygrf {
 
 class RandomSampler {
 public:

@@ -25,7 +25,7 @@
 #include <unordered_map>
 #include <vector>
 
-namespace grf {
+namespace mygrf {
 
 class SampleWeightComputer {
 public:
