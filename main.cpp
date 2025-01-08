@@ -113,6 +113,6 @@ int main() {
   // }
 
   // 结束运行
-  std::cout << "Down !" << std::endl;
+  std::cout << "Down!" << std::endl;
   std::cout << std::cin.get() << std::endl;
 }

@@ -1,4 +1,11 @@
+# vscode
 /.vscode
+
+# cmake
 /build
+
+# OSX
 *.DS_Store
+
+# unnecessary methods
 /trash
